@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="simplecalc.css">
+    </head>
+    <body>
+        <div class="container">
+            <form name="calculatorForm">
+                <div class="resultScreen">
+                    <div class="heading">Calculator</div>
+                    <input type="text" name="evalResult">
+                </div>
+                <div class="buttons">
+                    <div class="line">
+                        <input type="button" name="button7" value="7" onClick="valueCal(button7.value)"/>
+                        <input type="button" name="button8" value="8" onClick="valueCal(button8.value)"/>
+                        <input type="button" name="button9" value="9" onClick="valueCal(button9.value)"/>
+                        <input type="button" name="buttonDivision" value="/" onClick="valueCal(buttonDivision.value)"/>
+                    </div>
+                    <div class="line">
+                        <input type="button" name="button4" value="4" onClick="valueCal(button4.value)"/>
+                        <input type="button" name="button5" value="5" onClick="valueCal(button5.value)"/>
+                        <input type="button" name="button6" value="6" onClick="valueCal(button6.value)"/>
+                        <input type="button" name="buttonMultiply" value="*" onClick="valueCal(buttonMultiply.value)"/>
+                    </div>
+                    <div class="line">
+                        <input type="button" name="button1" value="1" onClick="valueCal(button1.value)"/>
+                        <input type="button" name="button2" value="2" onClick="valueCal(button2.value)"/>
+                        <input type="button" name="button3" value="3" onClick="valueCal(button3.value)"/>
+                        <input type="button" name="buttonSubtract" value="-" onClick="valueCal(buttonSubtract.value)"/>
+                    </div>
+                    <div class="line">
+                        <input type="button" name="button0" value="0" onClick="valueCal(button0.value)"/>
+                        <input type="button" name="buttonDecimal" value="." onClick="valueCal(buttonDecimal.value)"/>
+                        <input type="button" name="buttonAdd" value="+" onClick="valueCal(buttonAdd.value)"/>
+                        <input type="button" name="result" value="=" onClick="evalResult.value = eval(evalResult.value)"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="calculator.js"></script>
+</html>
